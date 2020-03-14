@@ -84,7 +84,17 @@ SOME BASIC symbol/expressions.
 
 
 
+/////////////////////////   DELETING DOCUMENTS   ////////////
 
+  1. deleteOne 
+  2. deleteMany
+
+    - db.test.deleteOne({name:"amy"})
+    for deleting the first value that comes while scanning.
+
+    - db.test.deleteMany({name"Sheldon"})
+    for deleting all name values which have name as Sheldon.
+    
 
 
 
