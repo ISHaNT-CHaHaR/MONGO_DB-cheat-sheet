@@ -68,6 +68,42 @@ SOME BASIC symbol/expressions.
 
 
 
+//////////////////   UPDATING DOCUMENTS ///////////
+
+  1. updateOne clause.
+  2. updateMany clause. 
+  3. replaceOne clause. 
+  4. replaceMany clause.
+
+    db.test.updateOne( { name:"Joey" } , { $set: {I'd:47476545678}  }  )
+  
+///// /updateMany can be used accordingly. 
+
+//// /replaceOne and replaceMany can be used exactly like updateOne and updateMany.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 
