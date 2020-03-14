@@ -1,0 +1,51 @@
+                 MONGO COMMANDS
+
+
+
+1. For creating a document./////////part of first operation CREATE
+
+   use Name of document.//////for example.... use test
+
+   [use is the keyword here and test is the name of document].
+    - use is also used to shift to an already existing document.   
+
+2. Inserting in a document.
+
+    - insertOne clause.
+        DATA IS ALWAYS STORED AS A BSON object.
+
+        Therefore, assume an already existing document [test].
+
+        db.test.insertOne({name:"Joey",Gender: "man", I'd: 3298165479623})
+
+    - insertMany clause. 
+        It just appends the insertOne clause and its work.
+
+            -db.test.insertMany({name:"amy",Gender: "female", I'd: 3298352479623},{name:"sheldon",Gender: "male", I'd: 4364365479623})
+
+3. To check if any data exist.
+       
+       - db.nameofdocument.find()
+       - db.test.find()///example.....
+
+4. show dbs ////It will show all the databases present.
+      sample output: 
+       config()
+       data()
+       test()
+
+   - show collections [It will show all the documents present in a collection]
+
+   - quit() [IN order to quit MONGO shell]
+   
+
+
+///////////////////////////// Moving to querying and CRUD operations in MONGO DB.///////////////////
+
+
+
+
+
+
+
+
