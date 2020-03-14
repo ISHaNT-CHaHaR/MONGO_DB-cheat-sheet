@@ -1,8 +1,9 @@
-                 MONGO COMMANDS
+                /MONGO COMMANDS
 
 
 
 1. For creating a document./////////part of first operation CREATE
+
 
    use Name of document.//////for example.... use test
 
@@ -40,7 +41,47 @@
    
 
 
-///////////////////////////// Moving to querying and CRUD operations in MONGO DB.///////////////////
+///////////////////// Moving to querying and CRUD operations in MONGO DB.///////////////////
+
+SOME BASIC symbol/expressions.
+
+  1. lte = less than or equal to.
+  2. lt = less than.
+  3. gt = greater than.
+  4. gte = greater than or equal to.
+  5. or /// for or joined queries.
+
+    MONGO DB queries for reading data.
+
+     Taking example of test document we created before.
+
+      Reading is achieved by using filter objects. 
+
+    -db.test.find({I'd:{$gt:4000}}) //////  Here $ is a built in operator in mongo and used for comparison.
+
+    //// gte,lte and lt can be used accordingly.
+
+- for comparison in OR condition.
+    
+      db.test.find({$or:[{I'd:{  $lt:100000000000000000   } },
+                           {I'd: { $gt : 1 } }   ] } )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
