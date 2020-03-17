@@ -1,7 +1,7 @@
-   #MONGO COMMANDS
+   # MONGO COMMANDS
 
 
-
+___
 1. For creating a document./////////part of first operation CREATE
 
 
@@ -9,7 +9,7 @@
 
    [use is the keyword here and test is the name of document].
     - use is also used to shift to an already existing document.   
-
+___
 2. Inserting in a document.
 
     - insertOne clause.
@@ -23,12 +23,12 @@
         It just appends the insertOne clause and its work.
 
             -db.test.insertMany({name:"amy",Gender: "female", I'd: 3298352479623},{name:"sheldon",Gender: "male", I'd: 4364365479623})
-
+___
 3. To check if any data exist.
        
        - db.nameofdocument.find()
        - db.test.find()///example.....
-
+___
 4. show dbs ////It will show all the databases present.
       sample output: 
        config()
@@ -40,8 +40,8 @@
    - quit() [IN order to quit MONGO shell]
    
 
-
-///////////////////// Moving to querying and CRUD operations in MONGO DB.///////////////////
+____
+# Moving to querying and CRUD operations in MONGO DB.
 
 SOME BASIC symbol/expressions.
 
@@ -59,7 +59,7 @@ SOME BASIC symbol/expressions.
 
     -db.test.find({I'd:{$gt:4000}}) //////  Here $ is a built in operator in mongo and used for comparison.
 
-    //// gte,lte and lt can be used accordingly.
+# # #gte,lte and lt can be used accordingly.
 
 - for comparison in OR condition.
     
@@ -67,27 +67,27 @@ SOME BASIC symbol/expressions.
                            {I'd: { $gt : 1 } }   ] } )
 
 
+___
+# UPDATING DOCUMENTS
 
-//////////////////   UPDATING DOCUMENTS ///////////
+ ## 1. updateOne clause.
+ ## 2. updateMany clause. 
+ ## 3. replaceOne clause. 
+ ## 4. replaceMany clause.
 
-  1. updateOne clause.
-  2. updateMany clause. 
-  3. replaceOne clause. 
-  4. replaceMany clause.
-
-    db.test.updateOne( { name:"Joey" } , { $set: {I'd:47476545678}  }  )
+    - db.test.updateOne( { name:"Joey" } , { $set: {I'd:47476545678}  }  )
   
-///// /updateMany can be used accordingly. 
+ ~~updateMany can be used accordingly.~~ 
 
-//// /replaceOne and replaceMany can be used exactly like updateOne and updateMany.
-
-
+ replaceOne and replaceMany can be used exactly like updateOne and updateMany.
 
 
-/////////////////////////   DELETING DOCUMENTS   ////////////
 
-  1. deleteOne 
-  2. deleteMany
+
+# DELETING DOCUMENTS   
+
+  ## 1. deleteOne 
+  ## 2. deleteMany
 
     - db.test.deleteOne({name:"amy"})
     for deleting the first value that comes while scanning.
