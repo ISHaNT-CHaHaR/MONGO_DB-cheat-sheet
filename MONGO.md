@@ -45,11 +45,11 @@ ____
 
 ## SOME BASIC symbol/expressions.
 
- __ 1. lte = less than or equal to.
-  2. lt = less than.
-  3. gt = greater than.
-  4. gte = greater than or equal to.
-  5. or /// for or joined queries.__
+ >1. lte = less than or equal to.
+ >2. lt = less than.
+ >3. gt = greater than.
+ >4. gte = greater than or equal to.
+ >5. or /// for or joined queries.__
 
     MONGO DB queries for reading data.
 
