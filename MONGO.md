@@ -2,7 +2,7 @@
 
 
 ___
-1. For creating a document./////////part of first operation CREATE
+ ## 1. For creating a document./////////part of first operation CREATE
 
 
    use Name of document.//////for example.... use test
@@ -10,7 +10,7 @@ ___
    [use is the keyword here and test is the name of document].
     - use is also used to shift to an already existing document.   
 ___
-2. Inserting in a document.
+ ## 2. Inserting in a document.
 
     - insertOne clause.
         DATA IS ALWAYS STORED AS A BSON object.
@@ -24,12 +24,12 @@ ___
 
             -db.test.insertMany({name:"amy",Gender: "female", I'd: 3298352479623},{name:"sheldon",Gender: "male", I'd: 4364365479623})
 ___
-3. To check if any data exist.
+## 3. To check if any data exist.
        
        - db.nameofdocument.find()
        - db.test.find()///example.....
 ___
-4. show dbs ////It will show all the databases present.
+## 4. show dbs ////It will show all the databases present.
       sample output: 
        config()
        data()
@@ -43,13 +43,13 @@ ___
 ____
 # Moving to querying and CRUD operations in MONGO DB.
 
-SOME BASIC symbol/expressions.
+## SOME BASIC symbol/expressions.
 
-  1. lte = less than or equal to.
+ __ 1. lte = less than or equal to.
   2. lt = less than.
   3. gt = greater than.
   4. gte = greater than or equal to.
-  5. or /// for or joined queries.
+  5. or /// for or joined queries.__
 
     MONGO DB queries for reading data.
 
@@ -59,7 +59,7 @@ SOME BASIC symbol/expressions.
 
     -db.test.find({I'd:{$gt:4000}}) //////  Here $ is a built in operator in mongo and used for comparison.
 
-# # #gte,lte and lt can be used accordingly.
+### gte,lte and lt can be used accordingly.
 
 - for comparison in OR condition.
     
